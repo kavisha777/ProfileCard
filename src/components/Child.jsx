@@ -9,14 +9,18 @@ import rubzz from "../assets/Images/rubzz.png";
 
 function Child(props) {
     return(
+        <>
         <div className="props">
-            <h1>My name is{props.name} </h1>
+           <div className="img">  <img src={props.img}/></div>
+           <br/><br/><br/><br/>
+           <div className="text"> <h1>My name is {props.name} </h1>
             <p>My Age is {props.age}</p>
-            <img>{props.img}</img>
+           
             <p>My Bio is {props.bio}</p>
-
+            </div>
 
         </div>
+        </>
     );
 }
 
